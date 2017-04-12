@@ -20,5 +20,4 @@
     <dimen name="margin_top_top_button_sign_up">16dp</dimen>
     <dimen name="margin_left_top_main_text_have_an_accont">24dp</dimen>
     <dimen name="margin_left_top_main_text_login_here">24dp</dimen>
-
 </resources>
