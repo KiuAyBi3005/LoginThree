@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_left_right_main_relative_layout">32dp</dimen>
+    <dimen name="padding_top_main_relative_layout">8dp</dimen>
+    <dimen name="size_main_text_sign_up">32sp</dimen>
+    <dimen name="margin_top_main_text_who_are_you">24dp</dimen>
+    <dimen name="size_main_text_who_are_you">16sp</dimen>
+    <dimen name="height_width_main_circular_image">72sp</dimen>
+    <dimen name="margin_top_main_circular_image">16dp</dimen>
+    <dimen name="margin_left_main_circular_image_teacher">32dp</dimen>
+    <dimen name="margin_right_main_circular_image_parent">32dp</dimen>
+    <dimen name="margin_top_main_text_parent_child_teacher">8dp</dimen>
+    <dimen name="height_main_edit_text">48dp</dimen>
+    <dimen name="height_main_button_sign_up">48dp</dimen>
+    <dimen name="padding_main_drawable_edit_text">8dp</dimen>
+    <dimen name="margin_top_top_edit_text_user_name">16dp</dimen>
+    <dimen name="margin_top_top_edit_text_email">8dp</dimen>
+    <dimen name="margin_top_top_edit_text_pass">8dp</dimen>
+    <dimen name="margin_top_top_edit_text_confirm">8dp</dimen>
+    <dimen name="margin_top_top_button_sign_up">16dp</dimen>
+    <dimen name="margin_left_top_main_text_have_an_accont">24dp</dimen>
+    <dimen name="margin_left_top_main_text_login_here">24dp</dimen>
+
+</resources>

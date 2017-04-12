@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LoginThree</string>
+    <string name="main_sign_up">Sign up</string>
+    <string name="main_who_are_you">WHO YOU ARE?</string>
+    <string name="main_parent">PARENT</string>
+    <string name="main_child">CHILD</string>
+    <string name="main_teacher">TEACHER</string>
+    <string name="main_hint_edit_text_username">User name</string>
+    <string name="main_hint_edit_text_email">Email</string>
+    <string name="main_hint_edit_text_pass">Password</string>
+    <string name="main_hint_edit_text_confirm">Confirm password</string>
+    <string name="main_text_button">SIGN UP</string>
+    <string name="main_have_an_account">Already have an account.</string>
+    <string name="main_login_here">  Login here</string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:paddingLeft="@dimen/padding_left_right_main_relative_layout"
+    android:paddingRight="@dimen/padding_left_right_main_relative_layout"
+    android:paddingTop="@dimen/padding_top_main_relative_layout"
+    tools:context="com.example.quanganh.loginthree.MainActivity">
+
+    <TextView
+        android:id="@+id/text_main_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/main_sign_up"
+        android:textSize="@dimen/size_main_text_sign_up" />
+
+    <TextView
+        android:id="@+id/text_main_who_are_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_main_sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_main_text_who_are_you"
+        android:text="@string/main_who_are_you"
+        android:textColor="@color/deep_purple_500"
+        android:textSize="@dimen/size_main_text_who_are_you" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circular_image_main_parent"
+        android:layout_width="@dimen/height_width_main_circular_image"
+        android:layout_height="@dimen/height_width_main_circular_image"
+        android:layout_below="@+id/text_main_who_are_you"
+        android:layout_marginRight="@dimen/margin_right_main_circular_image_parent"
+        android:layout_marginTop="@dimen/margin_top_main_circular_image"
+        android:layout_toLeftOf="@+id/circular_image_main_child"
+        android:src="@drawable/icon_parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circular_image_main_child"
+        android:layout_width="@dimen/height_width_main_circular_image"
+        android:layout_height="@dimen/height_width_main_circular_image"
+        android:layout_below="@+id/text_main_who_are_you"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_main_circular_image"
+        android:src="@drawable/icon_child" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circular_image_main_teacher"
+        android:layout_width="@dimen/height_width_main_circular_image"
+        android:layout_height="@dimen/height_width_main_circular_image"
+        android:layout_below="@id/text_main_who_are_you"
+        android:layout_marginLeft="@dimen/margin_left_main_circular_image_teacher"
+        android:layout_marginTop="@dimen/margin_top_main_circular_image"
+        android:layout_toRightOf="@id/circular_image_main_child"
+        android:src="@drawable/icon_teacher" />
+
+    <TextView
+        android:id="@+id/text_main_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/circular_image_main_parent"
+        android:layout_alignStart="@+id/circular_image_main_parent"
+        android:layout_below="@+id/circular_image_main_parent"
+        android:layout_marginTop="@dimen/margin_top_main_text_parent_child_teacher"
+        android:gravity="center"
+        android:text="@string/main_parent" />
+
+    <TextView
+        android:id="@+id/text_main_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/circular_image_main_child"
+        android:layout_alignStart="@+id/circular_image_main_child"
+        android:layout_below="@+id/circular_image_main_child"
+        android:layout_marginTop="@dimen/margin_top_main_text_parent_child_teacher"
+        android:gravity="center"
+        android:text="@string/main_child" />
+
+    <TextView
+        android:id="@+id/text_main_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/circular_image_main_teacher"
+        android:layout_alignStart="@+id/circular_image_main_teacher"
+        android:layout_below="@+id/circular_image_main_teacher"
+        android:layout_marginTop="@dimen/margin_top_main_text_parent_child_teacher"
+        android:gravity="center"
+        android:text="@string/main_teacher" />
+
+    <EditText
+        android:id="@+id/edit_text_main_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_main_edit_text"
+        android:layout_below="@id/text_main_child"
+        android:layout_marginTop="@dimen/margin_top_top_edit_text_user_name"
+        android:background="@drawable/all_background_edit_text"
+        android:drawableLeft="@drawable/icon_username"
+        android:drawablePadding="@dimen/padding_main_drawable_edit_text"
+        android:hint="@string/main_hint_edit_text_username" />
+
+    <EditText
+        android:id="@+id/edit_text_main_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_main_edit_text"
+        android:layout_below="@id/edit_text_main_user_name"
+        android:layout_marginTop="@dimen/margin_top_top_edit_text_email"
+        android:background="@drawable/all_background_edit_text"
+        android:drawableLeft="@drawable/icon_email"
+        android:drawablePadding="@dimen/padding_main_drawable_edit_text"
+        android:hint="@string/main_hint_edit_text_email" />
+
+    <EditText
+        android:id="@+id/edit_text_main_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_main_edit_text"
+        android:layout_below="@id/edit_text_main_email"
+        android:layout_marginTop="@dimen/margin_top_top_edit_text_pass"
+        android:background="@drawable/all_background_edit_text"
+        android:drawableLeft="@drawable/icon_lock"
+        android:drawablePadding="@dimen/padding_main_drawable_edit_text"
+        android:hint="@string/main_hint_edit_text_pass" />
+
+    <EditText
+        android:id="@+id/edit_text_main_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_main_edit_text"
+        android:layout_below="@id/edit_text_main_pass"
+        android:layout_marginTop="@dimen/margin_top_top_edit_text_confirm"
+        android:background="@drawable/all_background_edit_text"
+        android:drawableLeft="@drawable/icon_lock"
+        android:drawablePadding="@dimen/padding_main_drawable_edit_text"
+        android:hint="@string/main_hint_edit_text_confirm" />
+
+    <Button
+        android:id="@+id/button_main_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_main_button_sign_up"
+        android:layout_below="@id/edit_text_main_confirm"
+        android:layout_marginTop="@dimen/margin_top_top_button_sign_up"
+        android:background="@drawable/all_background_button"
+        android:text="@string/main_text_button" />
+
+    <TextView
+        android:id="@+id/text_main_have_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_main_sign_up"
+        android:layout_marginLeft="@dimen/margin_left_top_main_text_have_an_accont"
+        android:layout_marginTop="@dimen/margin_left_top_main_text_have_an_accont"
+        android:text="@string/main_have_an_account" />
+
+    <TextView
+        android:id="@+id/text_main_login_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_main_sign_up"
+        android:layout_marginTop="@dimen/margin_left_top_main_text_login_here"
+        android:layout_toEndOf="@id/text_main_have_an_account"
+        android:text="@string/main_login_here"
+        android:textColor="@color/yellow_900" />
+
+</RelativeLayout>
